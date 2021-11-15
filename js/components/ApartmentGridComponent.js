@@ -7,13 +7,25 @@ class ApartmentGridComponent {
     this.init()
   }
 
-  fetchApartments = () => {
-    API.fetchApartments(this.saveApartments, alert)
-  }
+  fetchApartments = () => { setTimeout(() => {
+    // API.fetchApartments(this.saveApartments, alert)
+
+    API.fetchApartments(
+      (apartments) => {
+        this.state.loading = false;
+        this.saveApartments(apartments);
+      },
+      (err) => {
+        alert(err);
+        this.state.loading = false;
+        this.render();
+      }
+    )
+
+  }, 1000)}
 
   saveApartments = (apartments) => {
     this.state.apartments = apartments;
-    this.state.loading = false;
     this.render();
   }
 
@@ -21,15 +33,34 @@ class ApartmentGridComponent {
     this.state.loading = true;
     this.fetchApartments();
     this.htmlElement = document.createElement('div');
+    this.htmlElement.className = 'row g-3';
     this.render();
+  }
+
+  wrapInColumn = (element) => {
+    const column = document.createElement('div');
+    column.className = 'col-12 col-sm-6 col-lg-4 col-xl-3';
+    column.appendChild(element);
+    return column;
   }
 
   render = () => {
     const { loading, apartments } = this.state;
     if (loading) {
-      this.htmlElement.innerHTML = 'siunčiama...';
+      this.htmlElement.innerHTML = `<div class="text-center"><img src="assets/loading.gif"/></div>`;
+      
+    } else if (apartments.length > 0) {
+      this.htmlElement.innerHTML = '';
+      
+      const apartmentElements = apartments
+      .map(x => new ApartmentCardComponent(x))
+      .map(x => x.htmlElement)
+      .map(this.wrapInColumn);
+      
+      this.htmlElement.append(...apartmentElements);
+
     } else {
-      this.htmlElement.innerHTML = 'parsiųsta!';
+      this.htmlElement.innerHTML = `<h2>Šiuo metu skelbimų nėra</h2>`;
     }
   }
 }
