@@ -28,6 +28,14 @@ class ApartmentGridComponent {
     this.render();
   }
 
+  deleteApartment = (id) => {
+    API.deleteApartments(
+      id,
+      () => API.fetchApartments(this.saveApartments, alert),
+      alert
+    );
+  }
+
   init = () => {
     this.state.loading = true;
     this.fetchApartments();
@@ -52,7 +60,10 @@ class ApartmentGridComponent {
       this.htmlElement.innerHTML = '';
       
       const apartmentElements = apartments
-      .map(x => new ApartmentCardComponent(x))
+      .map(({id, ...props}) => new ApartmentCardComponent({
+        ...props,
+        onDelete: () => this.deleteApartment(id)
+      }))
       .map(x => x.htmlElement)
       .map(this.wrapInColumn);
       
