@@ -1,0 +1,136 @@
+{
+  "apartments": [
+  {
+    "id": "1",
+    "type": "house",
+    "owner": {
+      "fullname": "Jonis Jonaitis",
+      "email": "jonis@gmail.com",
+      "phone": "+370 654 32132"
+    },
+    "roomCount": 4,
+    "squares": 122,
+    "address": {
+      "city": "Kaunas",
+      "country": "Lietuva",
+      "street": "Užupio g.",
+      "number": "9"
+    },
+    "price": {
+      "amount": 130000,
+      "currency": "€"
+    },
+    "imgSrc": "https://sa.lt/wp-content/uploads/2020/04/project-2305733_1920.jpg"
+  },
+  {
+    "id": "2",
+    "type": "flat",
+    "owner": {
+      "fullname": "Janina Nesvarbu",
+      "email": "janka@gmail.com",
+      "phone": "+370 654 36362"
+    },
+    "roomCount": 2,
+    "squares": 52,
+    "address": {
+      "city": "Kaunas",
+      "country": "Lietuva",
+      "street": "Savanorių g.",
+      "number": "11"
+    },
+    "price": {
+      "amount": 60000,
+      "currency": "€"
+    },
+    "imgSrc": "https://s1.15min.lt/images/photos/2019/10/29/original/butas-vilniuje-rinktines-gatveje-5db840bc4829d.jpg"
+  },
+  {
+    "id": "3",
+    "type": "cottage",
+    "owner": {
+      "fullname": "Petras Petraitis",
+      "email": "petrinis@gmail.com",
+      "phone": "+370 654 32188"
+    },
+    "roomCount": 3,
+    "squares": 81,
+    "address": {
+      "city": "Vilnius",
+      "country": "Lietuva",
+      "street": "Kirvio g.",
+      "number": "55"
+    },
+    "price": {
+      "amount": 80000,
+      "currency": "$"
+    },
+    "imgSrc": "https://g1.dcdn.lt/images/pix/kotedzas-73043288.jpg"
+  },
+  {
+    "id": "4",
+    "type": "house",
+    "owner": {
+      "fullname": "Algis Greitai",
+      "email": "algis@gmail.com",
+      "phone": "+370 654 36932"
+    },
+    "roomCount": 5,
+    "squares": 180,
+    "address": {
+      "city": "Šiauliai",
+      "country": "Lietuva",
+      "street": "Sodų g.",
+      "number": "1"
+    },
+    "price": {
+      "amount": 75000,
+      "currency": "€"
+    },
+    "imgSrc": "https://s1.15min.lt/images/photos/2017/11/24/big/kauno-r-sav-lapiu-mstl-parko-g-murinis-2-5a17cd8f24a0f.jpg"
+  },
+  {
+    "id": "5",
+    "type": "flat",
+    "owner": {
+      "fullname": "Jolanta Jolka",
+      "email": "Jolka@gmail.com",
+      "phone": "+370 654 32882"
+    },
+    "roomCount": 3,
+    "squares": 63,
+    "address": {
+      "city": "Klaipėda",
+      "country": "Lietuva",
+      "street": "Palangos g.",
+      "number": "12"
+    },
+    "price": {
+      "amount": 65000,
+      "currency": "€"
+    },
+    "imgSrc": "https://img4.manonamai.lt/article/ef832789-f344-4412-8bad-2ab839193c03/cover/71da2a1d-91ea-4a57-99f3-6059c24dd261.jpg"
+  },
+  {
+    "id": "6",
+    "type": "cottage",
+    "owner": {
+      "fullname": "Arturas Miškinis",
+      "email": "arta@gmail.com",
+      "phone": "+370 654 36344"
+    },
+    "roomCount": 4,
+    "squares": 90,
+    "address": {
+      "city": "Utena",
+      "country": "Lietuva",
+      "street": "Upės g.",
+      "number": "2"
+    },
+    "price": {
+      "amount": 70000,
+      "currency": "$"
+    },
+    "imgSrc": "https://s1.15min.lt/images/photos/2018/11/26/big/kotedzas-kauno-rajone-5bfc078f5baf8.jpg"
+  }
+  ]
+}
