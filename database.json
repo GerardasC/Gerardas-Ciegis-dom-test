@@ -2,7 +2,7 @@
   "apartments": [
   {
     "id": "1",
-    "type": "house",
+    "type": "Nice house",
     "owner": {
       "fullname": "Jonis Jonaitis",
       "email": "jonis@gmail.com",
@@ -24,7 +24,7 @@
   },
   {
     "id": "2",
-    "type": "flat",
+    "type": "Small flat",
     "owner": {
       "fullname": "Janina Nesvarbu",
       "email": "janka@gmail.com",
@@ -46,7 +46,7 @@
   },
   {
     "id": "3",
-    "type": "cottage",
+    "type": "Cozy cottage",
     "owner": {
       "fullname": "Petras Petraitis",
       "email": "petrinis@gmail.com",
@@ -61,14 +61,14 @@
       "number": "55"
     },
     "price": {
-      "amount": 80000,
+      "amount": 80000.25,
       "currency": "$"
     },
     "imgSrc": "https://g1.dcdn.lt/images/pix/kotedzas-73043288.jpg"
   },
   {
     "id": "4",
-    "type": "house",
+    "type": "Big house",
     "owner": {
       "fullname": "Algis Greitai",
       "email": "algis@gmail.com",
@@ -90,7 +90,7 @@
   },
   {
     "id": "5",
-    "type": "flat",
+    "type": "Great flat",
     "owner": {
       "fullname": "Jolanta Jolka",
       "email": "Jolka@gmail.com",
@@ -112,7 +112,7 @@
   },
   {
     "id": "6",
-    "type": "cottage",
+    "type": "Fine cottage",
     "owner": {
       "fullname": "Arturas Miškinis",
       "email": "arta@gmail.com",

@@ -8,7 +8,6 @@ class ApartmentGridComponent {
   }
 
   fetchApartments = () => { setTimeout(() => {
-    // API.fetchApartments(this.saveApartments, alert)
 
     API.fetchApartments(
       (apartments) => {
@@ -39,7 +38,7 @@ class ApartmentGridComponent {
 
   wrapInColumn = (element) => {
     const column = document.createElement('div');
-    column.className = 'col-12 col-sm-6 col-lg-4 col-xl-3';
+    column.className = 'col-12 col-sm-6 col-lg-4 col-xl-3 d-flex';
     column.appendChild(element);
     return column;
   }
