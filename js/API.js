@@ -15,13 +15,13 @@ class API {
   }
 }
 
-API.fetchApartments(
-  console.log,
-  console.error
-)
+// API.fetchApartments(
+//   console.log,
+//   console.error
+// )
 
-API.deleteApartments(
-  "1",
-  () => console.log('Ištrinta'),
-  console.error
-) 
+// API.deleteApartments(
+//   "1",
+//   () => console.log('Ištrinta'),
+//   console.error
+// ) 
